@@ -441,7 +441,7 @@ a {
     color: orangered;
 }
 .exit {
-    background: orange;
+     background: rgb(108, 77, 239);
     color: white;
     flex: none;
     align-self: center;
@@ -563,19 +563,25 @@ a {
 }
 
 .btn {
-    flex: none;
+    flex: none !important;
     cursor: pointer;
     padding: 10px;
     border-radius: 50%;
     background: rgb(108, 77, 239);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn svg {
     height: 2rem;
     width: 2rem;
+    flex: none;
 }
-
+.btn svg *{
+    fill:white;
+}
 .reveal {
     opacity: 0;
     transform: scale(0);
